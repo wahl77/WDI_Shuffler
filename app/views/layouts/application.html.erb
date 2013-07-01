@@ -5,6 +5,29 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+  
+  <script type="text/javascript">
+  var matrix = false;
+  window.onload = function () {
+       matrix = new Matrix({count:500,auto:1});
+  };
+  function start () {
+      if (matrix && !matrix.interval) {
+         matrix.init();
+      }
+  }
+  function stop () {
+      if (matrix && matrix.interval) {
+         matrix.stop();
+      }
+  }
+  function pause () {
+      if (matrix && matrix.interval) {
+         matrix.pause();
+      }
+  }
+  </script>
 </head>
 <body>
 
