@@ -1,15 +1,17 @@
-<h1>Shuffler</h1>
+<h1>WDI Shuffler</h1>
+
+<label>Number of students:</label>
+<select>
+  <% @students.count.times do |x| %>
+    <option value="<%=x+1%>"><%=x+1%></option>
+  <% end %>
+</select>
+<button>Go</button>
 
 <ul>
   <% @students.each do |student| %>
   <li><%= student %></li>
   <% end %>
 </ul>
-<label>Number of students</label>
-<select>
-  
-  <% @students.count.times do |x| %>
-    <option value="<%=x+1%>"><%=x+1%></option>
-  <% end %>
-</select>
-<button>Go</button>
+
+

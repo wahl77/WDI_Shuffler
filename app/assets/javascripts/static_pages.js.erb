@@ -1,18 +1,19 @@
 $(document).ready(function() {
+
 	$('button').on('click', shuffle);
-	
+
 	function shuffle(){
 		$('li').css("color","black") /* Reset all to black */
-		
-		
+
+
 		/* Get number of students and how many have to present */
 		num_of_students_to_present = $('select').val();
 		num_of_students_in_class = $('option').last().val();
-		
-		
+
+
 		student = [];
-		
-		
+
+
 		/* Get index position of random students */
 		for (var i = 0; i < num_of_students_to_present; ++i){
 			do {
@@ -20,10 +21,10 @@ $(document).ready(function() {
 			} while ($.inArray(random_number, student) >= 0);
 			student.push(random_number);
 		}
-		
+
 		/* Make the students appear in red */
 		for (var i = 0; i < student.length; ++i){
-			$('li').eq(student[i]).css("color","red")
+			$('li').eq(student[i]).css("color","yellow").css("font-size","35px").css("font-style","italic")
 		}
 	}
 });
