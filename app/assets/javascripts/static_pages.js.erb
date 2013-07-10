@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$('button').on('click', shuffle);
 
 	function shuffle(){
@@ -23,7 +24,7 @@ $(document).ready(function() {
 
 		/* Make the students appear in red */
 		for (var i = 0; i < student.length; ++i){
-			$('li').eq(student[i]).css("color","red").css("font-size","30px")
+			$('li').eq(student[i]).css("color","yellow").css("font-size","35px").css("font-style","italic")
 		}
 	}
 });
