@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
     "Baylee Feore      ",
     "Harrison Tan      ",
     "Thomas Galpin    ",
-    "Gabriel Dominguez "     
-    ] 
+    "Gabriel Dominguez "
+    ]
   end
 end
