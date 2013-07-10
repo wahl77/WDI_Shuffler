@@ -4,14 +4,31 @@
 
 
 body {
-	color: red;
+	color:red;
 	font-size:25px;
-	
 }
 
 h1 {
-	color: red;
+	color:black;
 }
-li {
-	color: red;
+li, label {
+	color:black;
+  font-size:15px;
+}
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

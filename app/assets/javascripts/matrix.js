@@ -6,7 +6,7 @@ function Matrix (opts) {
          this.font.link = opts.font.link||'fonts/mCode15.ttf';
          this.font.format = opts.font.format||'truetype';
          this.font.family = opts.font.family||'matrix';
-         this.font.size = opts.font.size||'7px';
+         this.font.size = opts.font.size||'10px';
          this.genStyle(this.cid,this.font);
          this.preload();
          if ($(this.cid)) {
